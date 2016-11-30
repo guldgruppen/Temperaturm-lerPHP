@@ -1,0 +1,20 @@
+<h2>{{ Title }}</h2>
+<p>På denne hjemmeside er du i stand til at se temperaturerne i EASJ lokaler og hvad temperaturen komemer til at være de næste 5 hverdage</p>
+<hr>
+<h3>Prognose:</h3>
+<br>
+<div class="jumbotron">
+
+    <div class="container col-md-offset-1">
+
+        {% for user in Data %}
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style=" margin-left: 5px; ">
+                <h6>{{ user.Day }}</h6>
+                <p>{{ user.Temp }} °C</p><!--her skal vi få beregnet temperaturen for at vi får den skrevet ud-->
+            </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+</div>

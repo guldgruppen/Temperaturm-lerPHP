@@ -1,0 +1,10 @@
+    <h4>Temperatur i Lokaler</h4>
+    <p>Herunder kan du se hvad temperaturen er i de viste lokaler fra den sidte tempretarur måling</p>
+    <!--Her skal vi lave det så den tager indefra databasen fra room table så hvis der komemr nye rum kommer der en ny classe-->
+    <div class="rooms MyRooms col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <b>Lærer Lokale</b>
+        <p>Sidste måling fra dette lokale var {{ Lokale1.Data }} °C</p><!--samme som ovenover så skal vi have den sidste måling ud fra serveren-->
+        <div class="alert alert-danger col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <strong>Temperaturen er for høj!</strong>
+        </div>
+    </div>

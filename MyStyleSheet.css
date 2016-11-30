@@ -1,0 +1,15 @@
+.h1-custom{
+     font-size: 52px;
+ }
+.navbar-mycustom {
+    background-color: #336B87;
+    border-color: #E7E7E7;
+    border-radius: 0;
+}
+.color-white{
+    color: white;
+}
+.body-custom{
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,50 @@
+
+    <h4>Beregning af Temperatur i lokaler</h4>
+    <p>Her under er du i stand til at se den genemsnitlige temperatur i et valgt lokale</p>
+
+
+            <form class="col-xs-12 col-sm-12 col-md-12 col-lg-12" method="post"><!--Gennemsnit på en valgt dato-->
+                <p>Du kan udregne den gennemsnotlige temperatur i et valgt klasse værelse på en valgt dato</p>
+                <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <label for="singledato">Dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
+                    <input type="datetime-local" class="form-control" id="singledato">
+                </div>
+                <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <label for="lokalenrsingledato">Lokale:</label>
+                    <select name="lokaler" id="lokalenrsingledato" class="form-control">
+                        <!--vi skal tjække disse rum ud fra databasen-->
+                        <option type="text" name="room0"></option>
+                        <option type="text"  name="room1">E201</option>
+                        <option type="text"  name="room2">Lærerværelse</option>
+                    </select>
+                </div><br><br><br><br>
+                <input type="submit" value="Beregn" class="btn btn-info">
+            </form>
+
+
+<hr>
+
+
+            <form class="col-xs-12 col-sm-12 col-md-12 col-lg-12" method="post">
+                <p>Du kan udregne den gennemsnotlige temperatur i et valgt klasse værelse i mellem flere dage</p>
+                <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <label for="singledato">Start Dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
+                    <input type="datetime-local" class="form-control" id="firstdato">
+                </div>
+                <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <label for="singledato">Slut Dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
+                    <input type="datetime-local" class="form-control" id="lastdato">
+                </div>
+                <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <label for="lokalenrtwodato">Lokale:</label>
+                    <select name="lokaler" id="lokalenrtwodato" class="form-control">
+                        <!--vi skal tjække disse rum ud fra databasen-->
+                        <option type="text" name="room0"></option>
+                        <option type="text"  name="room1">E201</option>
+                        <option type="text"  name="room2">Lærer lokale</option>
+                    </select>
+                </div>
+                <input type="submit" value="Beregn" class="btn btn-info"><!--denne skal skal kunne udregne alt mellem de valgte dage-->
+            </form>
+
+
