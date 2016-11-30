@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guldgruppens TemperaturMåler</title>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="body" id="body" class="row" >
+        <div class="mainbody col-xs-6 col-sm-6 col-md-6 col-lg-6" id="mainbody" style="text-align: center">
+            <div class="page-header col-md-12 col-lg-12 " id="banner" style="">
+                <h1 style="text-align: center;">Guldgruppens TemperaturMåler</h1>
+            </div>
+            <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-12" id="menu" style="margin-top: -20px;">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Home.html">Home</a> </li>
+                    <li><a href="Lokaler.html">Lokaler</a> </li>
+                    <li><a href="Statistik.html">Statistik</a> </li>
+                </ul>
+            </div>
+            <div class="middlebody col-xs-12 col-sm-12 col-md-12 col-lg-12" id="middlebody" style="">
+                <div id="textboxhome">
+                    <p>På denne hjemmeside er du i stand til at ase temperaturerne i EASJ lokaler og hvad temperaturen komemer til at være de næste 5 hverdage</p>
+                </div>
+                <div class="nextdays col-xs-12 col-sm-12 col-md-12 col-lg-12" id="nextdays" style="">
+                    <!--Til de 5 næste hverdage vi skal få lavet en udregnings metode til det-->
+                    {% for user in Data %}
+                        <div class="weatherday col-xs-2 col-sm-2 col-md-2 col-lg-2" style=" margin-left: 5px; ">
+                            <h6>{{ user.Day }}</h6>
+                            <p>{{ user.Temp }} °C</p><!--her skal vi få beregnet temperaturen for at vi får den skrevet ud-->
+                        </div>
+                    {% endfor %}
+                    <!--<div class="weatherday col-xs-2 col-sm-2 col-md-2 col-lg-2" style=" margin-left: 5px; ">
+                        <h6>Mandag</h6>
+                        <p>25 °C</p><!--her skal vi få beregnet temperaturen for at vi får den skrevet ud
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

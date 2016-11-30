@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guldgruppens TemperaturMåler</title>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="body" id="body" class="row">
+        <div class="mainbody col-xs-6 col-sm-6 col-md-6 col-lg-6 " id="mainbody" style="">
+            <div class="page-header col-md-12 col-lg-12 " id="banner" style="text-align: center;">
+                <h1>Guldgruppens TemperaturMåler</h1>
+            </div>
+            <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-12" id="menu" style="margin-top: -20px;">
+                <ul class="nav navbar-nav">
+                    <li><a href="Home.html">Home</a> </li>
+                    <li><a href="Lokaler.html">Lokaler</a> </li>
+                    <li><a href="Statistik.html">Statistik</a> </li>
+                </ul>
+            </div>
+            <div class="middlebody col-xs-12 col-sm-12 col-md-12 col-lg-12" id="middlebody">
+                <h4>Temperatur i Lokaler</h4>
+                <p>Herunder kan du se hvad temperaturen er i de viste lokaler fra den sidte tempretarur måling</p>
+            </div><!--Her skal vi lave det så den tager indefra databasen fra room table så hvis der komemr nye rum kommer der en ny classe-->
+            <div class="rooms col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <b>E201</b>
+                <p>Sidste måling fra dette lokaler var 44 °C</p><!--her skal vi få den til at vise den sidste måling fra serveren -->
+
+            </div>
+            <div class="rooms col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <b>Lærer Lokale</b>
+                <p>Sidste måling fra dette lokale var {{ Temperatur }} °C</p><!--samme som ovenover så skal vi have den sidste måling ud fra serveren-->
+            </div>
+            <button class="btn btn-primary" type="text" value="test" id="test"/>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+    $("#test").click(function(){
+        $.ajax({
+
+            type: "GET",
+            dataType: "application/json",
+            url: "http://localhost:28553/TempService.svc/Temperatur/GetNextFiveDays", //Relative or absolute path to response.php file
+            success: function (data) {
+                alert(data);
+            },
+            fail: function(bob){
+                alert(bob);
+            }
+        });
+    });
+        /*$.ajax({
+            type: "GET",
+            dataType: 'jsonp',
+            url: "http://localhost:28553/TempService.svc/Temperatur/GetNextFiveDays",
+        }).done(function( data ) {
+            console.log("done");
+        });*/
+
+</script>
+
+</body>
+</html>

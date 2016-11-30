@@ -5,6 +5,7 @@
     <title>Guldgruppens TemperaturMåler</title>
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -26,6 +27,9 @@
         </div>
         <div class="nextdays col-xs-12 col-sm-12 col-md-12 col-lg-12" id="nextdays" style="">
             <!--Til de 5 næste hverdage vi skal få lavet en udregnings metode til det-->
+            {% for user in users %}
+            <li>{{ user.username|e }}</li>
+            {% endfor %}
             <div class="weatherday col-xs-2 col-sm-2 col-md-2 col-lg-2" style=" margin-left: 5px; ">
             <h6>Mandag</h6>
             <p>25 °C</p><!--her skal vi få beregnet temperaturen for at vi får den skrevet ud-->
