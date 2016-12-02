@@ -14,5 +14,11 @@
     padding-right: 0;
 }
 .btn-style:hover{
-    transform: scale(1.2);
+
+    transition: 1.3s ease;
+
+}
+
+.overskrift {
+    padding-left: 15px;
 }

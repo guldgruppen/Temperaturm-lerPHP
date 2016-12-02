@@ -4,10 +4,10 @@
     <p>Det kan enten gøres for en specifik dag eller en periode.</p>
     <hr>
 
-
+<div class="row">
             <form method="post"><!--Gennemsnit på en valgt dato-->
-                <h4>Specifik dag:</h4>
-                <div class="body-custom form-group col-xs-3 col-sm-4 col-md-4 col-lg-4">
+                <h4 class="overskrift">Specifik dag:</h4>
+                <div class="form-group col-xs-3 col-sm-4 col-md-4 col-lg-4">
                     <label for="singledato">Dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
                     <input type="datetime-local" class="form-control" id="singledato">
                 </div>
@@ -19,16 +19,21 @@
                         <option type="text"  name="room2">Lærerværelse</option>
                     </select>
                 </div><br><br><br><br>
+                <div class="col-lg-3">
                 <input type="submit" value="Beregn" class="btn btn-primary btn-style">
+                    </div>
+                <div class=" col-lg-3 alert alert-info">
+                    <p>Resultat: </p>
+                </div>
+                <div class="col-lg-9"></div>
             </form>
+</div>
 
-
-
-
+<div class="row">
             <form method="post">
                 <hr>
-                <h4>Periode:</h4>
-                <div class="body-custom form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <h4 class="overskrift"> Periode:</h4>
+                <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <label for="singledato">Start dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
                     <input type="datetime-local" class="form-control" id="firstdato">
                 </div>
@@ -44,9 +49,18 @@
                         <option type="text"  name="room2">Læreværelset</option>
                     </select>
                 </div>
-                <input type="submit" value="Beregn" class="btn btn-primary btn-style"><!--denne skal skal kunne udregne alt mellem de valgte dage-->
-           <hr>
+
+                <div class="col-lg-3" >
+                    <input type="submit" value="Beregn" class="btn btn-primary btn-style">
+                </div>
+                <div class=" col-lg-3 alert alert-info">
+                    <p>Resultat: </p>
+                </div>
+                <div class="col-lg-9"></div>
+
+                <hr>
             </form>
+    </div>
 
 
 
