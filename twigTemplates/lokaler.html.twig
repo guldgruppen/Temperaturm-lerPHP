@@ -1,10 +1,16 @@
-    <h4>Temperatur i Lokaler</h4>
-    <p>Herunder kan du se hvad temperaturen er i de viste lokaler fra den sidte tempretarur måling</p>
-    <!--Her skal vi lave det så den tager indefra databasen fra room table så hvis der komemr nye rum kommer der en ny classe-->
-    <div class="rooms MyRooms col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <b>Lærer Lokale</b>
-        <p>Sidste måling fra dette lokale var {{ Lokale1.Data }} °C</p><!--samme som ovenover så skal vi have den sidste måling ud fra serveren-->
-        <div class="alert alert-danger col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <strong>Temperaturen er for høj!</strong>
+<h2>{{ Title }}</h2>
+
+    <p>Herunder kan det ses hvilken temperatur der er i lokalerne på EASJ, fra den sidste temperatur måling</p>
+    <hr>
+<h3>Lokaler på EASJ:</h3>
+
+    <div>
+        <b>Læreværelse</b>
+        <p>Sidste måling fra dette lokale er {{ Lokale1.Data }}°C</p>
+        <div class="alert alert-success col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <strong>Temperaturen er behagelig</strong>
         </div>
     </div>
+
+
+

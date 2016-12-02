@@ -10,6 +10,9 @@
     color: white;
 }
 .body-custom{
-    padding-left: 0;
+    padding-left: 0 !important;
     padding-right: 0;
+}
+.btn-style:hover{
+    transform: scale(1.2);
 }

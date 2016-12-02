@@ -14,7 +14,7 @@
 <header>
     <div class="row">
         <div class="text-center col-md-offset-3 col-md-6">
-            <h1 class="h1-custom" style="font-family: 'Agency FB'">Temperature Advicer</h1>
+            <h1 class="h1-custom" style="font-family: 'Arial Rounded MT Bold'">Temperature Advicer</h1>
             <br>
         </div>
     </div>
@@ -22,7 +22,7 @@
     <div class="row col-md-offset-3 col-md-6">
         <ul class="nav nav-tabs nav-justified">
             <li a role="presentation"><a href="?page=home">Home</a></li>
-            <li a role="presentation"><a href="?page=lokaler">Lokale</a></li>
+            <li a role="presentation"><a href="?page=lokaler">Lokaler</a></li>
             <li a role="presentation"><a href="?page=statistik">Statistik</a></li>
             <li a role="presentation"><a href="?page=3parts">3. Parts</a> </li>
         </ul>
