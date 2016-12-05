@@ -16,8 +16,8 @@ $response2 = file_get_contents('http://localhost:28553/TempService.svc/Temperatu
 $response2 = json_decode($response2, true);
 echo $template->render(array('Lokale1' => $response1, 'Lokale2' => $response2,'Title' => 'Lokaler'));
 
-$temp = $_GET['temp'];
-//$temp = $response1->Data;
+//$temp = $_GET['temp'];
+$temp = $response1->Data;
 
 if ($temp < "15")
 {
@@ -32,7 +32,7 @@ else if (15 <= $temp && $temp < 18)
 }
 else if (18 <= $temp && $temp < 22)
 {
-    echo "<div class=\"alert alert-success col-xs-12 col-sm-12 col-md-6 col-lg-6\">
+    echo "<div class=\"alert alert-success col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-offset-3 text-center\">
         <strong>Temperaturen er perfekt</strong>
     </div>";
 }

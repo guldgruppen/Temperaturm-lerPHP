@@ -1,3 +1,7 @@
+html,body{
+    width: 100%;
+    max-width: 100%;
+}
 .h1-custom{
      font-size: 52px;
  }
@@ -21,4 +25,14 @@
 
 .overskrift {
     padding-left: 15px;
+}
+.custom-btn{
+    background-color: black;
+    transition: .1s ease;
+}
+.custom-btn:hover{
+    background-color: gray;
+}
+.temp-style{
+    font-size: 98px;
 }

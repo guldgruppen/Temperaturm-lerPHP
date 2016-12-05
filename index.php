@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
 
-    <div class="row">
+    <div class="row" style="max-width: 100%; width: 100%;">
         <div class="text-center col-md-offset-3 col-md-6">
             <h1 class="h1-custom" style="font-family: 'Arial Rounded MT Bold'">Temperature Advicer</h1>
             <br>
