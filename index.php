@@ -11,7 +11,9 @@
 <html>
 <link rel="stylesheet" href="MyStyleSheet.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
+
     <div class="row">
         <div class="text-center col-md-offset-3 col-md-6">
             <h1 class="h1-custom" style="font-family: 'Arial Rounded MT Bold'">Temperature Advicer</h1>
@@ -21,10 +23,26 @@
 
     <div class="row col-md-offset-3 col-md-6">
         <ul class="nav nav-tabs nav-justified">
-            <li a role="presentation"><a href="?page=home">Home</a></li>
-            <li a role="presentation"><a href="?page=lokaler">Lokaler</a></li>
-            <li a role="presentation"><a href="?page=statistik">Statistik</a></li>
-            <li a role="presentation"><a href="?page=3parts">3. Parts</a> </li>
+            <li a role="presentation">
+                <a href="?page=home">
+                    <i class="fa fa-home fa-2x" aria-hidden="true" style="color: black;"></i>
+                </a>
+            </li>
+            <li a role="presentation">
+                <a href="?page=lokaler">
+                    <i class="fa fa-search fa-2x" aria-hidden="true" style="color: black;"></i>
+                </a>
+            </li>
+            <li a role="presentation">
+                <a href="?page=statistik">
+                    <i class="fa fa-bar-chart fa-2x" aria-hidden="true" style="color: black;"></i>
+                </a>
+            </li>
+            <li a role="presentation">
+                <a href="?page=3parts">
+                    <i class="fa fa-globe fa-2x" aria-hidden="true" style="color: black;"></i>
+                </a>
+            </li>
         </ul>
     </div>
 
