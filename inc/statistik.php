@@ -10,4 +10,27 @@ require_once 'vendor/autoload.php';
 $loader = new Twig_Loader_Filesystem('twigTemplates');
 $twig = new Twig_Environment($loader);
 $template = $twig->loadTemplate('statistik.html.twig');
-echo $template->render(array('Data' => "HEJ", 'Title' => 'Statistik'));
+
+if(isset($_POST["date1"]))
+{
+    $date = ($_POST["date1"]);
+    $date = str_replace("/","-",$date);
+    $url = 'http://localhost:28553/TempService.svc/Temperatur/GetStatistik/1/'.$date;
+    $response1 = file_get_contents($url);
+
+    echo $template->render(array('response1'=>$response1));
+}
+else if(isset($_POST["dateFra"]) && isset($_POST["dateTil"]))
+{
+    $dateFra = ($_POST["dateFra"]);
+    $dateTil = ($_POST["dateTil"]);
+    $dateFra = str_replace("/","-",$dateFra);
+    $dateTil = str_replace("/","-",$dateTil);
+    $url = 'http://localhost:28553/TempService.svc/Temperatur/GetStatistik/'.$dateFra.'/'.$dateTil.'/1';
+    $response2 = file_get_contents($url);
+
+    echo $template->render(array('response2'=>$response2));
+}
+else {
+    echo $template->render(array('Data' => "HEJ"));
+}

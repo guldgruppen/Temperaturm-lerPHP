@@ -4,21 +4,24 @@
                 <h4 class="overskrift">Specifik dag:</h4>
                 <div class="form-group col-xs-3 col-sm-4 col-md-4 col-lg-4">
                     <label for="singledato">Dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
-                    <input type="datetime-local" class="form-control" id="singledato">
+                    <!--<form action="../inc/statistik.php" method="post">-->
+                    <input type="text" name="date1" id="da" alt="date" class="IP_calendar" title="d/m/Y">
+                    <!--</form>-->
                 </div>
                 <div class="form-group col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <label for="lokalenrsingledato">Lokale:</label>
                     <select name="lokaler" id="lokalenrsingledato" class="form-control">
                         <!--vi skal tjække disse rum ud fra databasen-->
-                        <option type="text" name="room0"></option>
                         <option type="text"  name="room2">Lærerværelse</option>
                     </select>
                 </div><br><br><br><br>
                 <div class="col-lg-3">
-                <input type="submit" value="Beregn" class="btn btn-primary">
+                <!--<input type="submit" value="Beregn" class="btn btn-primary">-->
+                    <input type="submit" value="Beregn" class="btn btn-primary">
+
                     </div>
                 <div class=" col-lg-3 alert alert-info">
-                    <p>Resultat: </p>
+                    <p>Resultat: {{ response1 }} </p>
                 </div>
                 <div class="col-lg-9"></div>
             </form>
@@ -30,17 +33,16 @@
                 <h4 class="overskrift"> Periode:</h4>
                 <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <label for="singledato">Start dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
-                    <input type="datetime-local" class="form-control" id="firstdato">
+                    <input type="text" name="dateFra" id="da" alt="date" class="IP_calendar" title="d/m/Y">
                 </div>
                 <div class="form-group col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <label for="singledato">Slut dato:</label><!--vi skal fra databasen vælge alt der har med den valgte dato vi kan måske lave det som en kalender -->
-                    <input type="datetime-local" class="form-control" id="lastdato">
+                    <input type="text" name="dateTil" id="da" alt="date" class="IP_calendar" title="d/m/Y">
                 </div>
                 <div class="form-group col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <label for="lokalenrtwodato">Lokale:</label>
                     <select name="lokaler" id="lokalenrtwodato" class="form-control">
                         <!--vi skal tjække disse rum ud fra databasen-->
-                        <option type="text" name="room0"></option>
                         <option type="text"  name="room2">Læreværelset</option>
                     </select>
                 </div>
@@ -49,13 +51,14 @@
                     <input type="submit" value="Beregn" class="btn btn-primary btn-style">
                 </div>
                 <div class=" col-lg-3 alert alert-info">
-                    <p>Resultat: </p>
+                    <p>Resultat: {{ response2 }}</p>
                 </div>
                 <div class="col-lg-9"></div>
 
                 <hr>
             </form>
     </div>
+
 
 
 
