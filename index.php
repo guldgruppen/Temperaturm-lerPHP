@@ -14,38 +14,41 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
 
-    <div class="row" style="max-width: 100%; width: 100%;">
-        <div class="text-center col-md-offset-3 col-md-6">
-            <h1 class="h1-custom" style="font-family: 'Arial Rounded MT Bold'">Temperature Advicer</h1>
+    <div class="col-md-12" style="max-width: 100%; width: 100%; margin: 0px; padding: 0px;">
+        <div class="text-center col-md-12" style="background-color: #212121;">
+            <h1 class="h1-custom" style="">
+                <i class="fa fa-thermometer-full" aria-hidden="true"></i>
+                Temperature Advicer
+            </h1>
             <br>
         </div>
     </div>
-
+    <div class="container col-md-12  col-sm-12"  style="background-color: #212121;">
     <div class="row col-md-offset-3 col-md-6">
-        <ul class="nav nav-tabs nav-justified">
-            <li a role="presentation">
+        <ul class="nav nav-tabs nav-justified menu-list">
+            <li a role="presentation" class="menu-item-style">
                 <a href="?page=home">
-                    <i class="fa fa-home fa-2x" aria-hidden="true" style="color: black;"></i>
+                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
-            <li a role="presentation">
+            <li a role="presentation" class="menu-item-style">
                 <a href="?page=lokaler">
-                    <i class="fa fa-search fa-2x" aria-hidden="true" style="color: black;"></i>
+                    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
-            <li a role="presentation">
+            <li a role="presentation" class="menu-item-style">
                 <a href="?page=statistik">
-                    <i class="fa fa-bar-chart fa-2x" aria-hidden="true" style="color: black;"></i>
+                    <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
-            <li a role="presentation">
+            <li a role="presentation" class="menu-item-style">
                 <a href="?page=3parts">
-                    <i class="fa fa-globe fa-2x" aria-hidden="true" style="color: black;"></i>
+                    <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </div>
-
+    </div>
 
 </header>
 <body>

@@ -3,7 +3,11 @@ html,body{
     max-width: 100%;
 }
 .h1-custom{
-     font-size: 52px;
+    font-size: 52px;
+    color: #F5F5F5;
+    font-family: 'Arial Rounded MT Bold';
+    padding: 20px;
+    margin: 0px;
  }
 .navbar-mycustom {
     background-color: #336B87;
@@ -36,3 +40,18 @@ html,body{
 .temp-style{
     font-size: 98px;
 }
+.custom-menu-button{
+    background-color: #212121;
+    border-radius: 0px;
+}
+.menu-item-style a > i{
+    color: #2196F3;
+}
+.menu-list li a{
+    border: none;
+}
+.menu-list li a:hover{
+    border: none;
+    background-color: #424242;
+}
+

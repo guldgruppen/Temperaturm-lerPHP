@@ -1,21 +1,20 @@
 
+
+<link rel="stylesheet" href="MyStyleSheet.css"/>
 <h1 class="text-center">5 dags prognose</h1>
 <br>
-<div class="jumbotron">
 
-    <div class="container col-md-offset-1">
+
+<div class="container col-md-12" style="background-color: darkgrey;">
 
         {% for user in Data %}
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style=" margin-left: 5px; ">
-                <h6>{{ user.Day }}</h6>
-                <p>{{ user.Temp }} °C</p>
+            <div style="float: left; width: 20%; text-align: center;">
+                <p style="font-size: 1.2em;">{{ user.Day }}</p>
+                <p style="font-size: 20px; padding-top: 20px;">{{ user.Temp }} °C</p>
             </div>
         {% endfor %}
 
-    </div>
-
 </div>
 
 
 
-</div>
